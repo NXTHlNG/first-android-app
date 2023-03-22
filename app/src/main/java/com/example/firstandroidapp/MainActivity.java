@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (!radioButtonFemale.isChecked() && !radioButtonMale.isChecked()) {
                 Toast.makeText(getApplicationContext(), "Please select Gender", Toast.LENGTH_SHORT).show();
+                return;
             }
 
             Intent intent = new Intent(this, SecondActivity.class);
